@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Make Money with AI Tools 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&family=Courier+Prime&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy:       #070d1f;
+    --navy-mid:   #0a1f4d;
+    --navy-light: #1a3a6b;
+    --blue:       #378ADD;
+    --blue-light: #85B7EB;
+    --gold:       #f4a261;
+    --gold-dark:  #d4813e;
+    --white:      #ffffff;
+    --gray:       #8a9bb5;
+    --green:      #1D9E75;
+    --text:       #cfd8e8;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Lato', sans-serif;
+    background: var(--navy);
+    color: var(--text);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* NAV */
+  nav {
+    background: rgba(7,13,31,0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(244,162,97,0.2);
+    padding: 16px 40px;
+    display: flex; align-items: center; justify-content: space-between;
+    position: sticky; top: 0; z-index: 100;
+  }
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px; font-weight: 700; color: var(--white);
+    text-decoration: none;
+  }
+  .nav-logo span { color: var(--gold); }
+  .nav-links { display: flex; gap: 24px; }
+  .nav-links a {
+    font-size: 13px; color: var(--gray); text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-links a.active { color: var(--gold); font-weight: 700; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(160deg, #0f2550 0%, #070d1f 70%);
+    padding: 70px 40px 50px;
+    text-align: center;
+    position: relative; overflow: hidden;
+    border-bottom: 1px solid rgba(55,138,221,0.15);
+  }
+  .hero::before {
+    content: '';
+    position: absolute; top: -150px; left: 50%; transform: translateX(-50%);
+    width: 600px; height: 600px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(55,138,221,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-badge {
+    display: inline-block;
+    background: rgba(244,162,97,0.1);
+    border: 1px solid rgba(244,162,97,0.3);
+    color: var(--gold); font-size: 11px; font-weight: 700;
+    letter-spacing: 3px; padding: 7px 18px; border-radius: 30px;
+    margin-bottom: 24px; text-transform: uppercase;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 5vw, 52px); font-weight: 700;
+    color: var(--white); margin-bottom: 16px;
+  }
+  .hero h1 span { color: var(--gold); }
+  .hero-meta {
+    font-size: 14px; color: var(--gray); line-height: 1.6;
+  }
+  .hero-meta strong { color: var(--blue-light); }
+
+  /* MAIN LAYOUT */
+  .layout {
+    max-width: 1000px; margin: 0 auto;
+    padding: 60px 24px 80px;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+
+  /* SIDEBAR TOC */
+  .toc {
+    position: sticky; top: 80px;
+    background: rgba(10,31,77,0.5);
+    border: 1px solid rgba(55,138,221,0.15);
+    border-radius: 12px; padding: 24px 20px;
+  }
+  .toc-title {
+    font-size: 11px; font-weight: 700; letter-spacing: 2px;
+    color: var(--gold); text-transform: uppercase;
+    margin-bottom: 16px; padding-bottom: 12px;
+    border-bottom: 1px solid rgba(55,138,221,0.15);
+  }
+  .toc ul { list-style: none; }
+  .toc ul li { margin-bottom: 8px; }
+  .toc ul li a {
+    font-size: 13px; color: var(--gray); text-decoration: none;
+    display: flex; align-items: center; gap: 8px;
+    padding: 6px 8px; border-radius: 6px;
+    transition: all 0.2s;
+  }
+  .toc ul li a:hover { color: var(--blue-light); background: rgba(55,138,221,0.08); }
+  .toc ul li a::before {
+    content: ''; width: 4px; height: 4px; border-radius: 50%;
+    background: var(--navy-light); flex-shrink: 0;
+    transition: background 0.2s;
+  }
+  .toc ul li a:hover::before { background: var(--blue); }
+
+  /* CONTENT */
+  .content { min-width: 0; }
+
+  .last-updated {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(29,158,117,0.1);
+    border: 1px solid rgba(29,158,117,0.25);
+    border-radius: 6px; padding: 8px 14px;
+    font-size: 12px; color: var(--green);
+    margin-bottom: 36px;
+  }
+  .last-updated::before { content: '🕐'; font-size: 14px; }
+
+  .section {
+    margin-bottom: 48px;
+    scroll-margin-top: 100px;
+  }
+
+  .section-num {
+    font-family: 'Courier Prime', monospace;
+    font-size: 11px; color: var(--gold);
+    letter-spacing: 2px; margin-bottom: 8px;
+    display: block;
+  }
+
+  .section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700; color: var(--white);
+    margin-bottom: 16px; padding-bottom: 12px;
+    border-bottom: 1px solid rgba(55,138,221,0.12);
+    display: flex; align-items: center; gap: 12px;
+  }
+  .section h2 .icon { font-size: 20px; }
+
+  .section p {
+    font-size: 15px; line-height: 1.85; color: var(--text);
+    margin-bottom: 16px;
+  }
+
+  .section ul {
+    list-style: none; margin: 16px 0;
+  }
+  .section ul li {
+    font-size: 15px; line-height: 1.7; color: var(--text);
+    padding: 8px 0 8px 24px; position: relative;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+  }
+  .section ul li::before {
+    content: '→'; color: var(--blue);
+    position: absolute; left: 0; font-weight: 700;
+  }
+
+  /* INFO BOXES */
+  .info-box {
+    border-radius: 10px; padding: 20px 24px;
+    margin: 24px 0; font-size: 14px; line-height: 1.75;
+  }
+  .info-box.blue {
+    background: rgba(55,138,221,0.08);
+    border: 1px solid rgba(55,138,221,0.2);
+    border-left: 4px solid var(--blue);
+    color: var(--blue-light);
+  }
+  .info-box.gold {
+    background: rgba(244,162,97,0.07);
+    border: 1px solid rgba(244,162,97,0.2);
+    border-left: 4px solid var(--gold);
+    color: #d4b896;
+  }
+  .info-box.green {
+    background: rgba(29,158,117,0.08);
+    border: 1px solid rgba(29,158,117,0.2);
+    border-left: 4px solid var(--green);
+    color: #7ecfb5;
+  }
+  .info-box strong { display: block; margin-bottom: 6px; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; }
+
+  /* EMAIL LINK */
+  .email-link {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(55,138,221,0.1);
+    border: 1px solid rgba(55,138,221,0.3);
+    color: var(--blue-light); font-size: 14px;
+    padding: 10px 20px; border-radius: 8px;
+    text-decoration: none; margin-top: 8px;
+    transition: all 0.2s;
+  }
+  .email-link:hover {
+    background: rgba(55,138,221,0.18);
+    border-color: rgba(55,138,221,0.5);
+  }
+
+  /* DIVIDER */
+  .divider {
+    width: 48px; height: 3px;
+    background: linear-gradient(90deg, var(--gold), transparent);
+    border-radius: 2px; margin: 48px 0;
+  }
+
+  /* FOOTER */
+  footer {
+    background: #040810;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    padding: 36px 40px;
+    display: flex; flex-wrap: wrap;
+    align-items: center; justify-content: space-between;
+    gap: 20px;
+  }
+  .footer-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px; color: var(--white);
+  }
+  .footer-brand span { color: var(--gold); }
+  .footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
+  .footer-links a {
+    font-size: 13px; color: var(--gray);
+    text-decoration: none; transition: color 0.2s;
+  }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-links a.current { color: var(--gold); font-weight: 700; }
+  footer p {
+    width: 100%; font-size: 12px;
+    color: rgba(138,155,181,0.5); text-align: center;
+    margin-top: 12px; border-top: 1px solid rgba(255,255,255,0.04);
+    padding-top: 16px;
+  }
+
+  @media (max-width: 700px) {
+    .layout { grid-template-columns: 1fr; }
+    .toc { position: static; }
+    nav { padding: 14px 20px; }
+    .nav-links { gap: 14px; }
+    .hero { padding: 50px 20px 36px; }
+    footer { padding: 24px 20px; flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Make Money with <span>AI Tools</span></a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="privacy-policy.html" class="active">Privacy Policy</a>
+    <a href="terms-of-service.html">Terms</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">Legal Document</div>
+  <h1>Privacy <span>Policy</span></h1>
+  <p class="hero-meta">
+    This Privacy Policy explains how <strong>Make Money with AI Tools 2026</strong><br>
+    collects, uses, and protects your personal information.
+  </p>
+</div>
+
+<!-- LAYOUT -->
+<div class="layout">
+
+  <!-- SIDEBAR TOC -->
+  <aside class="toc">
+    <div class="toc-title">Contents</div>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#information">Information We Collect</a></li>
+      <li><a href="#use">How We Use It</a></li>
+      <li><a href="#sharing">Sharing Your Data</a></li>
+      <li><a href="#cookies">Cookies</a></li>
+      <li><a href="#third-party">Third-Party Services</a></li>
+      <li><a href="#security">Data Security</a></li>
+      <li><a href="#rights">Your Rights</a></li>
+      <li><a href="#children">Children's Privacy</a></li>
+      <li><a href="#changes">Policy Changes</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </aside>
+
+  <!-- CONTENT -->
+  <main class="content">
+
+    <div class="last-updated">Last Updated: May 2026</div>
+
+    <!-- OVERVIEW -->
+    <div class="section" id="overview">
+      <span class="section-num">01 — OVERVIEW</span>
+      <h2><span class="icon">📋</span> Overview</h2>
+      <p>Welcome to <strong style="color:var(--white)">Make Money with AI Tools 2026</strong>. This Privacy Policy describes how we collect, use, and safeguard information provided by visitors and customers of our website and digital products.</p>
+      <p>By accessing our website or purchasing our products, you agree to the terms of this Privacy Policy. If you do not agree with any part of this policy, please do not use our services.</p>
+      <div class="info-box green">
+        <strong>Our Commitment</strong>
+        We respect your privacy. We do not sell, trade, or rent your personal information to third parties for marketing purposes. Your data is used solely to deliver the products and services you requested.
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- INFORMATION WE COLLECT -->
+    <div class="section" id="information">
+      <span class="section-num">02 — DATA COLLECTION</span>
+      <h2><span class="icon">🗂️</span> Information We Collect</h2>
+      <p>We collect information in the following ways:</p>
+
+      <p><strong style="color:var(--white)">Information You Provide Directly:</strong></p>
+      <ul>
+        <li>Name and email address when you purchase a product</li>
+        <li>Billing information processed securely through JVZoo's payment system</li>
+        <li>Messages or inquiries submitted through our contact form</li>
+        <li>Feedback or testimonials you voluntarily provide</li>
+      </ul>
+
+      <p><strong style="color:var(--white)">Information Collected Automatically:</strong></p>
+      <ul>
+        <li>IP address and general geographic location (country/region)</li>
+        <li>Browser type and version</li>
+        <li>Pages visited and time spent on our website</li>
+        <li>Referring website or link that brought you to our site</li>
+      </ul>
+
+      <div class="info-box blue">
+        <strong>Payment Information</strong>
+        We do not store your credit card or payment details. All payment processing is handled securely by JVZoo.com and PayPal, which have their own privacy policies and security measures.
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- HOW WE USE IT -->
+    <div class="section" id="use">
+      <span class="section-num">03 — DATA USE</span>
+      <h2><span class="icon">⚙️</span> How We Use Your Information</h2>
+      <p>The information we collect is used for the following purposes:</p>
+      <ul>
+        <li>To process and deliver your purchase (eBook download)</li>
+        <li>To send order confirmations and receipts</li>
+        <li>To provide customer support when you contact us</li>
+        <li>To send important product updates or notifications</li>
+        <li>To improve our website and product offerings</li>
+        <li>To comply with legal obligations</li>
+      </ul>
+      <div class="info-box gold">
+        <strong>Email Communications</strong>
+        If you opt in to our mailing list, we may send you educational content and product updates relevant to AI tools and online income. You may unsubscribe at any time using the link in any email we send.
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- SHARING -->
+    <div class="section" id="sharing">
+      <span class="section-num">04 — DATA SHARING</span>
+      <h2><span class="icon">🤝</span> Sharing Your Information</h2>
+      <p>We do not sell, trade, or transfer your personal information to outside parties except in the following limited circumstances:</p>
+      <ul>
+        <li><strong style="color:var(--white)">Service Providers:</strong> Trusted third parties who assist in operating our website and delivering products (e.g., JVZoo, email delivery services), bound by confidentiality agreements</li>
+        <li><strong style="color:var(--white)">Legal Requirements:</strong> When required by law, court order, or governmental authority</li>
+        <li><strong style="color:var(--white)">Business Transfer:</strong> In the event of a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction</li>
+        <li><strong style="color:var(--white)">Protection of Rights:</strong> When necessary to protect our rights, safety, or the rights and safety of others</li>
+      </ul>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- COOKIES -->
+    <div class="section" id="cookies">
+      <span class="section-num">05 — COOKIES</span>
+      <h2><span class="icon">🍪</span> Cookies & Tracking</h2>
+      <p>Our website uses cookies — small text files placed on your device — to enhance your browsing experience. We use cookies for the following purposes:</p>
+      <ul>
+        <li><strong style="color:var(--white)">Essential Cookies:</strong> Required for the website to function properly (e.g., maintaining your session)</li>
+        <li><strong style="color:var(--white)">Analytics Cookies:</strong> Help us understand how visitors interact with our site so we can improve it</li>
+        <li><strong style="color:var(--white)">Affiliate Tracking:</strong> JVZoo uses cookies to track affiliate referrals and attribute sales correctly</li>
+      </ul>
+      <p>You may disable cookies in your browser settings. However, doing so may affect the functionality of certain parts of our website.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- THIRD PARTY -->
+    <div class="section" id="third-party">
+      <span class="section-num">06 — THIRD-PARTY SERVICES</span>
+      <h2><span class="icon">🔗</span> Third-Party Services</h2>
+      <p>Our website and products interact with the following third-party services, each with their own privacy policies:</p>
+      <ul>
+        <li><strong style="color:var(--white)">JVZoo (jvzoo.com):</strong> Payment processing and affiliate management platform</li>
+        <li><strong style="color:var(--white)">PayPal:</strong> Secure payment processing</li>
+        <li><strong style="color:var(--white)">GitHub Pages:</strong> Website hosting</li>
+        <li><strong style="color:var(--white)">Google Fonts:</strong> Typography delivery</li>
+      </ul>
+      <p>We recommend reviewing the privacy policies of these services for full transparency about how they handle your data.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- SECURITY -->
+    <div class="section" id="security">
+      <span class="section-num">07 — SECURITY</span>
+      <h2><span class="icon">🔒</span> Data Security</h2>
+      <p>We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.</p>
+      <p>These measures include:</p>
+      <ul>
+        <li>SSL encryption on all web pages (HTTPS)</li>
+        <li>Secure payment processing through PCI-compliant platforms</li>
+        <li>Limited access to personal data on a need-to-know basis</li>
+        <li>Regular review of our data collection and storage practices</li>
+      </ul>
+      <div class="info-box blue">
+        <strong>Important Note</strong>
+        No method of transmission over the internet or electronic storage is 100% secure. While we strive to protect your information, we cannot guarantee absolute security. If you believe your data has been compromised, please contact us immediately.
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- YOUR RIGHTS -->
+    <div class="section" id="rights">
+      <span class="section-num">08 — YOUR RIGHTS</span>
+      <h2><span class="icon">⚖️</span> Your Rights</h2>
+      <p>Depending on your location, you may have the following rights regarding your personal information:</p>
+      <ul>
+        <li><strong style="color:var(--white)">Right to Access:</strong> Request a copy of the personal data we hold about you</li>
+        <li><strong style="color:var(--white)">Right to Correction:</strong> Request correction of inaccurate or incomplete data</li>
+        <li><strong style="color:var(--white)">Right to Deletion:</strong> Request deletion of your personal data, subject to legal obligations</li>
+        <li><strong style="color:var(--white)">Right to Opt-Out:</strong> Unsubscribe from marketing emails at any time</li>
+        <li><strong style="color:var(--white)">Right to Portability:</strong> Request your data in a portable format (where applicable)</li>
+      </ul>
+      <p>To exercise any of these rights, please contact us using the information provided in the Contact section below.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- CHILDREN -->
+    <div class="section" id="children">
+      <span class="section-num">09 — CHILDREN'S PRIVACY</span>
+      <h2><span class="icon">👶</span> Children's Privacy</h2>
+      <p>Our products and services are intended for individuals aged 18 and older. We do not knowingly collect personal information from children under the age of 18.</p>
+      <p>If you believe we have inadvertently collected information from a minor, please contact us immediately and we will take prompt steps to delete that information.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- CHANGES -->
+    <div class="section" id="changes">
+      <span class="section-num">10 — POLICY CHANGES</span>
+      <h2><span class="icon">🔄</span> Changes to This Policy</h2>
+      <p>We reserve the right to update this Privacy Policy at any time. When we make significant changes, we will:</p>
+      <ul>
+        <li>Update the "Last Updated" date at the top of this page</li>
+        <li>Notify active customers via email where appropriate</li>
+        <li>Post a notice on our website for a reasonable period</li>
+      </ul>
+      <p>Your continued use of our website or products after changes are posted constitutes your acceptance of the updated policy.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- CONTACT -->
+    <div class="section" id="contact">
+      <span class="section-num">11 — CONTACT</span>
+      <h2><span class="icon">📬</span> Contact Us</h2>
+      <p>If you have any questions, concerns, or requests regarding this Privacy Policy or how we handle your personal data, please reach out to us:</p>
+      <div class="info-box green">
+        <strong>Privacy Inquiries</strong>
+        We aim to respond to all privacy-related inquiries within 48 hours on business days.
+      </div>
+      <a href="contact.html" class="email-link">📧 Go to Contact Page</a>
+    </div>
+
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">Make Money with <span>AI Tools</span> 2026</div>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="privacy-policy.html" class="current">Privacy Policy</a>
+    <a href="terms-of-service.html">Terms of Service</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <p>© 2026 Make Money with AI Tools. All Rights Reserved. | Results are not guaranteed and will vary based on individual effort and market conditions.</p>
+</footer>
+
+<script>
+  // Highlight active TOC link on scroll
+  const sections = document.querySelectorAll('.section');
+  const tocLinks = document.querySelectorAll('.toc a');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        tocLinks.forEach(link => {
+          link.style.color = '';
+          link.style.background = '';
+        });
+        const activeLink = document.querySelector(`.toc a[href="#${entry.target.id}"]`);
+        if (activeLink) {
+          activeLink.style.color = 'var(--blue-light)';
+          activeLink.style.background = 'rgba(55,138,221,0.08)';
+        }
+      }
+    });
+  }, { threshold: 0.3, rootMargin: '-80px 0px 0px 0px' });
+
+  sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>
