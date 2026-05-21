@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JV Page — Make Money with AI Tools 2026 | Affiliate Program</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@300;400;700&family=Courier+Prime&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy:       #070d1f;
+    --navy-mid:   #0a1f4d;
+    --navy-light: #1a3a6b;
+    --blue:       #378ADD;
+    --blue-light: #85B7EB;
+    --gold:       #f4a261;
+    --gold-dark:  #d4813e;
+    --white:      #ffffff;
+    --gray:       #8a9bb5;
+    --green:      #1D9E75;
+    --text:       #cfd8e8;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Lato', sans-serif;
+    background: var(--navy);
+    color: var(--text);
+    overflow-x: hidden;
+  }
+
+  /* NAV */
+  nav {
+    background: rgba(7,13,31,0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(244,162,97,0.2);
+    padding: 16px 40px;
+    display: flex; align-items: center; justify-content: space-between;
+    position: sticky; top: 0; z-index: 100;
+  }
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px; font-weight: 700; color: var(--white);
+    text-decoration: none;
+  }
+  .nav-logo span { color: var(--gold); }
+  .nav-links { display: flex; gap: 24px; }
+  .nav-links a {
+    font-size: 13px; color: var(--gray);
+    text-decoration: none; transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+
+  /* HERO */
+  .hero {
+    min-height: 80vh;
+    background: linear-gradient(160deg, #0f2550 0%, #070d1f 70%);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    text-align: center; padding: 80px 20px 60px;
+    position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; top: -200px; left: 50%; transform: translateX(-50%);
+    width: 700px; height: 700px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(55,138,221,0.1) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero::after {
+    content: '';
+    position: absolute; bottom: -100px; right: -100px;
+    width: 400px; height: 400px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(244,162,97,0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .badge-top {
+    display: inline-block;
+    background: rgba(29,158,117,0.12);
+    border: 1px solid rgba(29,158,117,0.35);
+    color: var(--green); font-size: 11px; font-weight: 700;
+    letter-spacing: 3px; padding: 8px 20px; border-radius: 30px;
+    margin-bottom: 28px; text-transform: uppercase;
+    animation: fadeDown 0.8s ease both;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(36px, 6vw, 68px); font-weight: 900;
+    line-height: 1.1; color: var(--white);
+    max-width: 820px; margin-bottom: 20px;
+    animation: fadeDown 0.9s 0.1s ease both;
+  }
+  .hero h1 span { color: var(--gold); }
+  .hero-sub {
+    font-size: clamp(16px, 2vw, 20px);
+    color: var(--blue-light); font-weight: 300;
+    max-width: 600px; line-height: 1.7; margin-bottom: 48px;
+    animation: fadeDown 1s 0.2s ease both;
+  }
+
+  /* STATS ROW */
+  .stats-row {
+    display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;
+    margin-bottom: 40px;
+    animation: fadeUp 1s 0.3s ease both;
+  }
+  .stat-card {
+    background: rgba(10,31,77,0.7);
+    border: 1px solid rgba(55,138,221,0.2);
+    border-top: 3px solid var(--gold);
+    border-radius: 12px; padding: 20px 28px; text-align: center;
+    min-width: 140px;
+  }
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px; font-weight: 900; color: var(--gold);
+    line-height: 1; margin-bottom: 6px;
+  }
+  .stat-label { font-size: 12px; color: var(--gray); letter-spacing: 1px; }
+
+  /* CTA BTN */
+  .cta-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--green), #158f63);
+    color: var(--white); font-size: 17px; font-weight: 700;
+    padding: 18px 52px; border-radius: 50px; text-decoration: none;
+    box-shadow: 0 8px 32px rgba(29,158,117,0.35);
+    transition: transform 0.2s, box-shadow 0.2s;
+    animation: fadeUp 1s 0.4s ease both;
+  }
+  .cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 40px rgba(29,158,117,0.5);
+  }
+  .cta-sub { font-size: 13px; color: var(--gray); margin-top: 14px; }
+
+  /* SECTIONS */
+  section { padding: 80px 20px; }
+  .container { max-width: 900px; margin: 0 auto; }
+  .section-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 3px;
+    color: var(--gold); text-transform: uppercase; margin-bottom: 14px;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(26px, 4vw, 40px); font-weight: 700;
+    line-height: 1.2; margin-bottom: 20px; color: var(--white);
+  }
+  .section-title span { color: var(--gold); }
+  .section-body { font-size: 16px; color: var(--text); line-height: 1.8; }
+  .divider-line {
+    width: 56px; height: 3px;
+    background: linear-gradient(90deg, var(--gold), transparent);
+    border-radius: 2px; margin: 0 0 36px;
+  }
+
+  /* COMMISSION BOX */
+  .commission-section { background: #060c1a; }
+  .commission-box {
+    background: linear-gradient(145deg, #0a2540, #0d1f3d);
+    border: 1px solid rgba(29,158,117,0.3);
+    border-radius: 16px; padding: 40px;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+    gap: 24px; margin-top: 40px;
+  }
+  .commission-item { text-align: center; }
+  .commission-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px; font-weight: 900; color: var(--green);
+    line-height: 1; margin-bottom: 8px;
+  }
+  .commission-label { font-size: 13px; color: var(--gray); margin-bottom: 4px; }
+  .commission-note { font-size: 12px; color: rgba(138,155,181,0.6); }
+
+  /* FUNNEL */
+  .funnel-section { background: var(--navy); }
+  .funnel-grid { margin-top: 40px; display: grid; gap: 16px; }
+  .funnel-item {
+    display: flex; align-items: center; gap: 20px;
+    background: rgba(10,31,77,0.5);
+    border: 1px solid rgba(55,138,221,0.12);
+    border-radius: 12px; padding: 24px 28px;
+    transition: border-color 0.2s;
+  }
+  .funnel-item:hover { border-color: rgba(55,138,221,0.3); }
+  .funnel-icon {
+    font-size: 28px; min-width: 48px; text-align: center;
+  }
+  .funnel-content h3 { font-size: 17px; font-weight: 700; color: var(--white); margin-bottom: 4px; }
+  .funnel-content p { font-size: 14px; color: var(--gray); line-height: 1.6; }
+  .funnel-price {
+    margin-left: auto; text-align: right;
+    font-family: 'Playfair Display', serif;
+  }
+  .funnel-price .price { font-size: 22px; font-weight: 700; color: var(--gold); }
+  .funnel-price .comm { font-size: 11px; color: var(--green); margin-top: 2px; }
+
+  /* SWIPE COPY */
+  .swipe-section { background: #060c1a; }
+  .swipe-tabs {
+    display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap;
+  }
+  .tab-btn {
+    padding: 9px 20px; border-radius: 30px; font-size: 13px; font-weight: 700;
+    cursor: pointer; border: 1px solid rgba(55,138,221,0.3);
+    background: transparent; color: var(--gray);
+    transition: all 0.2s;
+  }
+  .tab-btn.active, .tab-btn:hover {
+    background: rgba(55,138,221,0.15);
+    border-color: var(--blue); color: var(--blue-light);
+  }
+  .swipe-box {
+    background: rgba(7,13,31,0.8);
+    border: 1px solid rgba(55,138,221,0.15);
+    border-radius: 12px; padding: 28px 32px;
+    position: relative;
+  }
+  .swipe-label {
+    font-family: 'Courier Prime', monospace;
+    font-size: 10px; color: var(--gold); letter-spacing: 2px;
+    text-transform: uppercase; margin-bottom: 16px; display: block;
+  }
+  .swipe-content {
+    font-size: 14px; color: var(--text); line-height: 1.9;
+    white-space: pre-wrap; font-family: 'Lato', sans-serif;
+  }
+  .swipe-content strong { color: var(--white); }
+  .copy-btn {
+    position: absolute; top: 20px; right: 20px;
+    background: rgba(55,138,221,0.15);
+    border: 1px solid rgba(55,138,221,0.3);
+    color: var(--blue-light); font-size: 12px; font-weight: 700;
+    padding: 8px 16px; border-radius: 8px; cursor: pointer;
+    transition: all 0.2s;
+  }
+  .copy-btn:hover { background: rgba(55,138,221,0.25); }
+  .copy-btn.copied { color: var(--green); border-color: var(--green); }
+
+  /* TABS CONTENT */
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+
+  /* TOOLS SECTION */
+  .tools-section { background: var(--navy); }
+  .tools-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap: 16px; margin-top: 40px;
+  }
+  .tool-card {
+    background: rgba(10,31,77,0.5);
+    border: 1px solid rgba(55,138,221,0.12);
+    border-radius: 12px; padding: 24px;
+  }
+  .tool-card h3 { font-size: 15px; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+  .tool-card p { font-size: 13px; color: var(--gray); line-height: 1.6; margin-bottom: 16px; }
+  .tool-tag {
+    display: inline-block;
+    background: rgba(244,162,97,0.1);
+    border: 1px solid rgba(244,162,97,0.25);
+    color: var(--gold); font-size: 11px; font-weight: 700;
+    padding: 4px 12px; border-radius: 20px;
+  }
+
+  /* SCHEDULE */
+  .schedule-section { background: #060c1a; }
+  .schedule-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 16px; margin-top: 40px;
+  }
+  .schedule-card {
+    background: linear-gradient(145deg, #0d254f, #0a1830);
+    border: 1px solid rgba(55,138,221,0.15);
+    border-radius: 12px; padding: 24px 20px; text-align: center;
+  }
+  .schedule-date {
+    font-family: 'Courier Prime', monospace;
+    font-size: 11px; color: var(--gold); letter-spacing: 2px;
+    margin-bottom: 10px; text-transform: uppercase;
+  }
+  .schedule-event {
+    font-size: 15px; font-weight: 700; color: var(--white);
+    margin-bottom: 6px;
+  }
+  .schedule-note { font-size: 12px; color: var(--gray); line-height: 1.5; }
+
+  /* FINAL CTA */
+  .final-cta {
+    background: linear-gradient(160deg, #0f2550, #070d1f);
+    text-align: center; padding: 100px 20px;
+    position: relative; overflow: hidden;
+  }
+  .final-cta::before {
+    content: '';
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+    width: 600px; height: 600px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(29,158,117,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .final-cta h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px,5vw,50px); font-weight: 900;
+    color: var(--white); max-width: 700px; margin: 0 auto 20px; line-height: 1.2;
+  }
+  .final-cta h2 span { color: var(--gold); }
+  .final-cta p {
+    font-size: 17px; color: var(--blue-light);
+    max-width: 520px; margin: 0 auto 40px; line-height: 1.7;
+  }
+
+  /* FOOTER */
+  footer {
+    background: #040810;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    padding: 32px 40px; text-align: center;
+  }
+  footer p { font-size: 12px; color: rgba(138,155,181,0.5); line-height: 1.8; }
+  footer a { color: var(--blue-light); text-decoration: none; }
+
+  /* INFO BOX */
+  .info-box {
+    border-radius: 10px; padding: 20px 24px;
+    margin: 24px 0; font-size: 14px; line-height: 1.75;
+  }
+  .info-box.green {
+    background: rgba(29,158,117,0.08);
+    border: 1px solid rgba(29,158,117,0.2);
+    border-left: 4px solid var(--green);
+    color: #7ecfb5;
+  }
+  .info-box.gold {
+    background: rgba(244,162,97,0.07);
+    border: 1px solid rgba(244,162,97,0.2);
+    border-left: 4px solid var(--gold);
+    color: #d4b896;
+  }
+  .info-box strong { display: block; margin-bottom: 6px; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+
+  /* REVEAL */
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  @keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 640px) {
+    nav { padding: 14px 20px; }
+    .nav-links { gap: 14px; }
+    .commission-box { grid-template-columns: 1fr 1fr; }
+    .funnel-item { flex-wrap: wrap; }
+    .funnel-price { margin-left: 0; }
+    footer { padding: 24px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Make Money with <span>AI Tools</span></a>
+  <div class="nav-links">
+    <a href="index.html">Sales Page</a>
+    <a href="privacy-policy.html">Privacy</a>
+    <a href="terms-of-service.html">Terms</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="badge-top">🤝 Affiliate & JV Program — Open Now</div>
+  <h1>Promote a Product Your<br>Audience <span>Will Thank You For</span></h1>
+  <p class="hero-sub">Join our affiliate program and earn 60% commission on every sale of <strong>Make Money with AI Tools 2026</strong> — a high-value digital product with proven demand.</p>
+
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="stat-num">60%</div>
+      <div class="stat-label">Commission Rate</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">$17</div>
+      <div class="stat-label">Product Price</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">$10</div>
+      <div class="stat-label">Your Earnings / Sale</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">77</div>
+      <div class="stat-label">Pages of Value</div>
+    </div>
+  </div>
+
+  <a href="https://www.jvzoo.com" target="_blank" class="cta-btn">✅ Get Your Affiliate Link Now</a>
+  <p class="cta-sub">Instant approval · No minimum traffic required · All niches welcome</p>
+</section>
+
+<!-- COMMISSION -->
+<section class="commission-section">
+  <div class="container reveal">
+    <div class="section-label">The Numbers</div>
+    <h2 class="section-title">Simple, <span>Generous</span> Commissions</h2>
+    <div class="divider-line"></div>
+    <p class="section-body">We offer one of the most competitive commission structures in the make-money-online niche. Every sale you refer puts real money in your account — instantly via JVZoo.</p>
+
+    <div class="commission-box">
+      <div class="commission-item">
+        <div class="commission-num">60%</div>
+        <div class="commission-label">Commission Per Sale</div>
+        <div class="commission-note">Paid instantly via JVZoo</div>
+      </div>
+      <div class="commission-item">
+        <div class="commission-num">$10</div>
+        <div class="commission-label">You Earn Per Sale</div>
+        <div class="commission-note">On every $17 purchase</div>
+      </div>
+      <div class="commission-item">
+        <div class="commission-num">30</div>
+        <div class="commission-label">Day Cookie Duration</div>
+        <div class="commission-note">Full credit for 30 days</div>
+      </div>
+      <div class="commission-item">
+        <div class="commission-num">0</div>
+        <div class="commission-label">Minimum Threshold</div>
+        <div class="commission-note">Get paid from first sale</div>
+      </div>
+    </div>
+
+    <div class="info-box green" style="margin-top:32px;">
+      <strong>💡 Example Earnings</strong>
+      Send 100 targeted visitors → 3% conversion = 3 sales → $30 in commissions.
+      Send 1,000 visitors → 3% conversion = 30 sales → $300 in commissions.
+      Results depend on traffic quality and your audience's interest in AI and online income.
+    </div>
+  </div>
+</section>
+
+<!-- FUNNEL -->
+<section class="funnel-section">
+  <div class="container reveal">
+    <div class="section-label">Product Funnel</div>
+    <h2 class="section-title">What You're <span>Promoting</span></h2>
+    <div class="divider-line"></div>
+    <p class="section-body">A single high-value front-end offer — no complicated funnel, no upsells to confuse your audience. Clean, simple, and easy to promote.</p>
+
+    <div class="funnel-grid">
+      <div class="funnel-item">
+        <div class="funnel-icon">📖</div>
+        <div class="funnel-content">
+          <h3>Make Money with AI Tools 2026</h3>
+          <p>77-page complete guide covering freelancing, content creation, affiliate marketing, and a 30-day action plan. Beginner-friendly and actionable.</p>
+        </div>
+        <div class="funnel-price">
+          <div class="price">$17</div>
+          <div class="comm">You earn $10.20</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-box gold" style="margin-top:24px;">
+      <strong>🎯 Why This Converts</strong>
+      The $17 price point removes purchase hesitation. The topic (AI + online income) is one of the hottest niches in 2026. The product delivers genuine, actionable value — which means happy buyers, low refund rates, and strong word-of-mouth.
+    </div>
+  </div>
+</section>
+
+<!-- SWIPE COPY -->
+<section class="swipe-section">
+  <div class="container reveal">
+    <div class="section-label">Marketing Materials</div>
+    <h2 class="section-title">Ready-Made <span>Swipe Copy</span></h2>
+    <div class="divider-line"></div>
+    <p class="section-body">Copy, paste, and send. All promotional materials below are written and ready to use. Customize with your affiliate link before sending.</p>
+
+    <div style="margin-top:36px;">
+      <div class="swipe-tabs">
+        <button class="tab-btn active" onclick="showTab('email1')">Email #1</button>
+        <button class="tab-btn" onclick="showTab('email2')">Email #2</button>
+        <button class="tab-btn" onclick="showTab('social')">Social Post</button>
+        <button class="tab-btn" onclick="showTab('subject')">Subject Lines</button>
+      </div>
+
+      <!-- EMAIL 1 -->
+      <div class="tab-content active" id="email1">
+        <div class="swipe-box">
+          <button class="copy-btn" onclick="copyText('email1-text', this)">Copy</button>
+          <span class="swipe-label">// Email #1 — Introduction</span>
+          <div class="swipe-content" id="email1-text"><strong>Subject:</strong> The AI tools actually making people money in 2026
+
+Hi [First Name],
+
+I want to share something with you that I think is genuinely useful.
+
+There is a new guide out called <strong>Make Money with AI Tools 2026</strong> and it covers something I get asked about constantly: how do ordinary people actually earn income using AI tools?
+
+Not theory. Not hype. Actual strategies with specific tools, step-by-step instructions, and a 30-day action plan.
+
+The guide covers:
+- The 10 AI tools that are generating real income right now
+- How to get your first freelance client on Fiverr or Upwork using AI
+- How to build content assets that generate ongoing income
+- A complete affiliate marketing system powered by AI tools
+- A day-by-day 30-day plan to go from zero to your first dollar
+
+It is 77 pages and priced at just $17.
+
+If you have been curious about how to earn online using AI — this is a practical starting point.
+
+[YOUR AFFILIATE LINK HERE]
+
+Speak soon,
+[Your Name]</div>
+        </div>
+      </div>
+
+      <!-- EMAIL 2 -->
+      <div class="tab-content" id="email2">
+        <div class="swipe-box">
+          <button class="copy-btn" onclick="copyText('email2-text', this)">Copy</button>
+          <span class="swipe-label">// Email #2 — Follow Up (send 2 days later)</span>
+          <div class="swipe-content" id="email2-text"><strong>Subject:</strong> Still thinking about earning with AI? (this helps)
+
+Hi [First Name],
+
+Two days ago I mentioned a guide about earning with AI tools. I wanted to follow up because a few people asked me the same question:
+
+"Is this for complete beginners?"
+
+Yes. Completely.
+
+The author of <strong>Make Money with AI Tools 2026</strong> built the entire guide around people who have zero experience with online income and zero technical background. The tools covered all have free plans. The strategies start from absolute zero.
+
+What I appreciated most is the 30-day action plan — it removes the "where do I start?" paralysis by giving you a specific task for each day of your first month.
+
+At $17 it is a low-risk way to get a complete roadmap for something that is genuinely in demand right now.
+
+[YOUR AFFILIATE LINK HERE]
+
+[Your Name]
+
+P.S. The price may go up after the launch period. Just so you know.</div>
+        </div>
+      </div>
+
+      <!-- SOCIAL -->
+      <div class="tab-content" id="social">
+        <div class="swipe-box">
+          <button class="copy-btn" onclick="copyText('social-text', this)">Copy</button>
+          <span class="swipe-label">// Social Media Post (Twitter / LinkedIn / Facebook)</span>
+          <div class="swipe-content" id="social-text">If you have been wondering how people are actually using AI tools to earn income online — this is worth your time.
+
+Make Money with AI Tools 2026 is a 77-page practical guide covering:
+
+→ 10 specific AI tools that generate real income
+→ How to freelance with AI on Fiverr and Upwork
+→ Building content assets (blogs, newsletters, YouTube)
+→ Affiliate marketing powered by AI
+→ A complete 30-day action plan
+
+No fluff. No inflated claims. Just a clear, actionable roadmap for beginners.
+
+Currently $17 → [YOUR AFFILIATE LINK HERE]
+
+#AI #SideIncome #MakeMoneyOnline #AITools #FreelanceLife</div>
+        </div>
+      </div>
+
+      <!-- SUBJECT LINES -->
+      <div class="tab-content" id="subject">
+        <div class="swipe-box">
+          <button class="copy-btn" onclick="copyText('subject-text', this)">Copy</button>
+          <span class="swipe-label">// Email Subject Lines — A/B Test These</span>
+          <div class="swipe-content" id="subject-text">1. The AI tools actually making people money in 2026
+2. A 77-page guide to earning online with AI (just $17)
+3. How ordinary people are using AI to earn income right now
+4. Still looking for a clear AI income roadmap? (here it is)
+5. From zero to first dollar: the AI tools guide I wish existed sooner
+6. This 30-day plan is the most practical AI income guide I have seen
+7. What I learned from a 77-page guide on AI and online income
+8. The beginner's roadmap to earning with AI tools (honest review)
+9. AI tools + online income: a complete guide for non-tech people
+10. Finally — a clear, no-hype guide to earning with AI in 2026</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROMOTIONAL TOOLS -->
+<section class="tools-section">
+  <div class="container reveal">
+    <div class="section-label">Promotional Assets</div>
+    <h2 class="section-title">Everything You Need to <span>Promote</span></h2>
+    <div class="divider-line"></div>
+    <div class="tools-grid">
+      <div class="tool-card">
+        <h3>📧 Email Swipe Copy</h3>
+        <p>Two complete email templates ready to send to your list. Tested subject lines included.</p>
+        <span class="tool-tag">Available Above</span>
+      </div>
+      <div class="tool-card">
+        <h3>📱 Social Media Posts</h3>
+        <p>Ready-to-post content for Twitter, LinkedIn, and Facebook. Copy and customize.</p>
+        <span class="tool-tag">Available Above</span>
+      </div>
+      <div class="tool-card">
+        <h3>🔗 Your Affiliate Link</h3>
+        <p>Get your unique tracking link from JVZoo. 30-day cookie ensures you get credit for every sale.</p>
+        <span class="tool-tag">Via JVZoo</span>
+      </div>
+      <div class="tool-card">
+        <h3>📊 Sales Page</h3>
+        <p>Professional, conversion-focused sales page your audience lands on after clicking your link.</p>
+        <span class="tool-tag">Ready to Go</span>
+      </div>
+      <div class="tool-card">
+        <h3>💬 Questions?</h3>
+        <p>Need custom materials, higher commission tiers, or have a large audience? Contact us directly.</p>
+        <span class="tool-tag">Contact Us</span>
+      </div>
+      <div class="tool-card">
+        <h3>📈 Real-Time Stats</h3>
+        <p>Track your clicks, conversions, and earnings in real time through your JVZoo affiliate dashboard.</p>
+        <span class="tool-tag">Via JVZoo</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCHEDULE -->
+<section class="schedule-section">
+  <div class="container reveal">
+    <div class="section-label">Launch Schedule</div>
+    <h2 class="section-title">Key <span>Dates</span></h2>
+    <div class="divider-line"></div>
+    <div class="schedule-grid">
+      <div class="schedule-card">
+        <div class="schedule-date">Phase 01</div>
+        <div class="schedule-event">Product Launch</div>
+        <div class="schedule-note">Introductory price of $17 — limited launch period</div>
+      </div>
+      <div class="schedule-card">
+        <div class="schedule-date">Phase 02</div>
+        <div class="schedule-event">Price Increase</div>
+        <div class="schedule-note">Price moves to $27 after the launch window closes</div>
+      </div>
+      <div class="schedule-card">
+        <div class="schedule-date">Ongoing</div>
+        <div class="schedule-event">Evergreen Sales</div>
+        <div class="schedule-note">Product remains available — promote any time</div>
+      </div>
+      <div class="schedule-card">
+        <div class="schedule-date">Always</div>
+        <div class="schedule-event">Commission Paid</div>
+        <div class="schedule-note">60% paid instantly on every sale you refer</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label" style="text-align:center; margin-bottom:20px;">Ready to Promote?</div>
+      <h2>Get Your Affiliate Link<br>and <span>Start Earning Today</span></h2>
+      <p>Join our affiliate program on JVZoo — instant approval, 60% commission, and all the marketing materials you need to get started immediately.</p>
+      <a href="https://www.jvzoo.com" target="_blank" class="cta-btn">✅ Get My Affiliate Link — Free to Join</a>
+      <p class="cta-sub" style="margin-top:16px; color:var(--gray);">Questions? <a href="contact.html" style="color:var(--blue-light);">Contact us here</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>
+    <strong style="color:var(--white);">Make Money with AI Tools 2026</strong> — Affiliate Program<br>
+    <a href="index.html">Sales Page</a> · <a href="privacy-policy.html">Privacy Policy</a> · <a href="terms-of-service.html">Terms of Service</a> · <a href="contact.html">Contact</a>
+  </p>
+  <p style="margin-top:12px;">
+    Commission rates and product details are subject to change. Results vary based on traffic quality, audience, and effort. This is not a guarantee of income.
+  </p>
+</footer>
+
+<script>
+  // Tab switching
+  function showTab(id) {
+    document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    event.target.classList.add('active');
+  }
+
+  // Copy text
+  function copyText(id, btn) {
+    const text = document.getElementById(id).innerText;
+    navigator.clipboard.writeText(text).then(() => {
+      btn.textContent = 'Copied!';
+      btn.classList.add('copied');
+      setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 2000);
+    });
+  }
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
