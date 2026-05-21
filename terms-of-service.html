@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service — Make Money with AI Tools 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&family=Courier+Prime&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy:       #070d1f;
+    --navy-mid:   #0a1f4d;
+    --navy-light: #1a3a6b;
+    --blue:       #378ADD;
+    --blue-light: #85B7EB;
+    --gold:       #f4a261;
+    --gold-dark:  #d4813e;
+    --white:      #ffffff;
+    --gray:       #8a9bb5;
+    --green:      #1D9E75;
+    --red:        #c62828;
+    --text:       #cfd8e8;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Lato', sans-serif;
+    background: var(--navy);
+    color: var(--text);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* NAV */
+  nav {
+    background: rgba(7,13,31,0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(244,162,97,0.2);
+    padding: 16px 40px;
+    display: flex; align-items: center; justify-content: space-between;
+    position: sticky; top: 0; z-index: 100;
+  }
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px; font-weight: 700; color: var(--white);
+    text-decoration: none;
+  }
+  .nav-logo span { color: var(--gold); }
+  .nav-links { display: flex; gap: 24px; }
+  .nav-links a {
+    font-size: 13px; color: var(--gray);
+    text-decoration: none; transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-links a.active { color: var(--gold); font-weight: 700; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(160deg, #0f2550 0%, #070d1f 70%);
+    padding: 70px 40px 50px;
+    text-align: center;
+    position: relative; overflow: hidden;
+    border-bottom: 1px solid rgba(55,138,221,0.15);
+  }
+  .hero::before {
+    content: '';
+    position: absolute; top: -150px; left: 50%; transform: translateX(-50%);
+    width: 600px; height: 600px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(55,138,221,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-badge {
+    display: inline-block;
+    background: rgba(244,162,97,0.1);
+    border: 1px solid rgba(244,162,97,0.3);
+    color: var(--gold); font-size: 11px; font-weight: 700;
+    letter-spacing: 3px; padding: 7px 18px; border-radius: 30px;
+    margin-bottom: 24px; text-transform: uppercase;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 5vw, 52px); font-weight: 700;
+    color: var(--white); margin-bottom: 16px;
+  }
+  .hero h1 span { color: var(--gold); }
+  .hero-meta { font-size: 14px; color: var(--gray); line-height: 1.7; }
+  .hero-meta strong { color: var(--blue-light); }
+
+  /* LAYOUT */
+  .layout {
+    max-width: 1000px; margin: 0 auto;
+    padding: 60px 24px 80px;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+
+  /* TOC */
+  .toc {
+    position: sticky; top: 80px;
+    background: rgba(10,31,77,0.5);
+    border: 1px solid rgba(55,138,221,0.15);
+    border-radius: 12px; padding: 24px 20px;
+  }
+  .toc-title {
+    font-size: 11px; font-weight: 700; letter-spacing: 2px;
+    color: var(--gold); text-transform: uppercase;
+    margin-bottom: 16px; padding-bottom: 12px;
+    border-bottom: 1px solid rgba(55,138,221,0.15);
+  }
+  .toc ul { list-style: none; }
+  .toc ul li { margin-bottom: 6px; }
+  .toc ul li a {
+    font-size: 13px; color: var(--gray); text-decoration: none;
+    display: flex; align-items: center; gap: 8px;
+    padding: 6px 8px; border-radius: 6px;
+    transition: all 0.2s;
+  }
+  .toc ul li a:hover { color: var(--blue-light); background: rgba(55,138,221,0.08); }
+  .toc ul li a::before {
+    content: ''; width: 4px; height: 4px; border-radius: 50%;
+    background: var(--navy-light); flex-shrink: 0;
+    transition: background 0.2s;
+  }
+  .toc ul li a:hover::before { background: var(--blue); }
+
+  /* CONTENT */
+  .content { min-width: 0; }
+
+  .last-updated {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(29,158,117,0.1);
+    border: 1px solid rgba(29,158,117,0.25);
+    border-radius: 6px; padding: 8px 14px;
+    font-size: 12px; color: var(--green);
+    margin-bottom: 36px;
+  }
+  .last-updated::before { content: '🕐'; font-size: 14px; }
+
+  .section {
+    margin-bottom: 48px;
+    scroll-margin-top: 100px;
+  }
+  .section-num {
+    font-family: 'Courier Prime', monospace;
+    font-size: 11px; color: var(--gold);
+    letter-spacing: 2px; margin-bottom: 8px;
+    display: block;
+  }
+  .section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700; color: var(--white);
+    margin-bottom: 16px; padding-bottom: 12px;
+    border-bottom: 1px solid rgba(55,138,221,0.12);
+    display: flex; align-items: center; gap: 12px;
+  }
+  .section h2 .icon { font-size: 20px; }
+  .section p {
+    font-size: 15px; line-height: 1.85; color: var(--text);
+    margin-bottom: 16px;
+  }
+  .section ul { list-style: none; margin: 16px 0; }
+  .section ul li {
+    font-size: 15px; line-height: 1.7; color: var(--text);
+    padding: 8px 0 8px 24px; position: relative;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+  }
+  .section ul li::before {
+    content: '→'; color: var(--blue);
+    position: absolute; left: 0; font-weight: 700;
+  }
+
+  /* INFO BOXES */
+  .info-box {
+    border-radius: 10px; padding: 20px 24px;
+    margin: 20px 0; font-size: 14px; line-height: 1.75;
+  }
+  .info-box.blue {
+    background: rgba(55,138,221,0.08);
+    border: 1px solid rgba(55,138,221,0.2);
+    border-left: 4px solid var(--blue);
+    color: var(--blue-light);
+  }
+  .info-box.gold {
+    background: rgba(244,162,97,0.07);
+    border: 1px solid rgba(244,162,97,0.2);
+    border-left: 4px solid var(--gold);
+    color: #d4b896;
+  }
+  .info-box.green {
+    background: rgba(29,158,117,0.08);
+    border: 1px solid rgba(29,158,117,0.2);
+    border-left: 4px solid var(--green);
+    color: #7ecfb5;
+  }
+  .info-box.red {
+    background: rgba(198,40,40,0.07);
+    border: 1px solid rgba(198,40,40,0.2);
+    border-left: 4px solid var(--red);
+    color: #e8a0a0;
+  }
+  .info-box strong {
+    display: block; margin-bottom: 6px;
+    font-size: 12px; letter-spacing: 1px; text-transform: uppercase;
+  }
+
+  /* REFUND BOX */
+  .refund-box {
+    background: linear-gradient(145deg, #0a2540, #0d1f3d);
+    border: 1px solid rgba(29,158,117,0.3);
+    border-radius: 14px; padding: 32px 36px;
+    text-align: center; margin: 28px 0;
+  }
+  .refund-icon { font-size: 40px; margin-bottom: 12px; }
+  .refund-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700; color: var(--white);
+    margin-bottom: 10px;
+  }
+  .refund-title span { color: var(--green); }
+  .refund-desc { font-size: 15px; color: var(--text); line-height: 1.7; max-width: 480px; margin: 0 auto; }
+
+  /* DIVIDER */
+  .divider {
+    width: 48px; height: 3px;
+    background: linear-gradient(90deg, var(--gold), transparent);
+    border-radius: 2px; margin: 48px 0;
+  }
+
+  /* CONTACT LINK */
+  .contact-link {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(55,138,221,0.1);
+    border: 1px solid rgba(55,138,221,0.3);
+    color: var(--blue-light); font-size: 14px;
+    padding: 10px 20px; border-radius: 8px;
+    text-decoration: none; margin-top: 8px;
+    transition: all 0.2s;
+  }
+  .contact-link:hover {
+    background: rgba(55,138,221,0.18);
+    border-color: rgba(55,138,221,0.5);
+  }
+
+  /* FOOTER */
+  footer {
+    background: #040810;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    padding: 36px 40px;
+    display: flex; flex-wrap: wrap;
+    align-items: center; justify-content: space-between;
+    gap: 20px;
+  }
+  .footer-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px; color: var(--white);
+  }
+  .footer-brand span { color: var(--gold); }
+  .footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
+  .footer-links a {
+    font-size: 13px; color: var(--gray);
+    text-decoration: none; transition: color 0.2s;
+  }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-links a.current { color: var(--gold); font-weight: 700; }
+  footer p {
+    width: 100%; font-size: 12px;
+    color: rgba(138,155,181,0.5); text-align: center;
+    margin-top: 12px;
+    border-top: 1px solid rgba(255,255,255,0.04);
+    padding-top: 16px;
+  }
+
+  @media (max-width: 700px) {
+    .layout { grid-template-columns: 1fr; }
+    .toc { position: static; }
+    nav { padding: 14px 20px; }
+    .nav-links { gap: 14px; }
+    .hero { padding: 50px 20px 36px; }
+    footer { padding: 24px 20px; flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Make Money with <span>AI Tools</span></a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-service.html" class="active">Terms</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">Legal Document</div>
+  <h1>Terms of <span>Service</span></h1>
+  <p class="hero-meta">
+    Please read these terms carefully before purchasing or using<br>
+    <strong>Make Money with AI Tools 2026</strong>
+  </p>
+</div>
+
+<!-- LAYOUT -->
+<div class="layout">
+
+  <!-- TOC -->
+  <aside class="toc">
+    <div class="toc-title">Contents</div>
+    <ul>
+      <li><a href="#agreement">Agreement</a></li>
+      <li><a href="#product">Product Description</a></li>
+      <li><a href="#purchase">Purchase & Delivery</a></li>
+      <li><a href="#refund">Refund Policy</a></li>
+      <li><a href="#license">License & Usage</a></li>
+      <li><a href="#prohibited">Prohibited Uses</a></li>
+      <li><a href="#disclaimer">Disclaimer</a></li>
+      <li><a href="#liability">Limitation of Liability</a></li>
+      <li><a href="#intellectual">Intellectual Property</a></li>
+      <li><a href="#governing">Governing Law</a></li>
+      <li><a href="#changes">Changes to Terms</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </aside>
+
+  <!-- CONTENT -->
+  <main class="content">
+
+    <div class="last-updated">Last Updated: May 2026</div>
+
+    <!-- AGREEMENT -->
+    <div class="section" id="agreement">
+      <span class="section-num">01 — AGREEMENT</span>
+      <h2><span class="icon">📋</span> Agreement to Terms</h2>
+      <p>By accessing our website, purchasing, or downloading <strong style="color:var(--white)">Make Money with AI Tools 2026</strong>, you agree to be bound by these Terms of Service and all applicable laws and regulations.</p>
+      <p>If you do not agree with any of these terms, you are prohibited from using or accessing our products and services. These terms apply to all visitors, users, and customers.</p>
+      <div class="info-box blue">
+        <strong>Important</strong>
+        These terms constitute a legally binding agreement between you and Make Money with AI Tools 2026. Please read them carefully before making a purchase.
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- PRODUCT DESCRIPTION -->
+    <div class="section" id="product">
+      <span class="section-num">02 — PRODUCT</span>
+      <h2><span class="icon">📖</span> Product Description</h2>
+      <p><strong style="color:var(--white)">Make Money with AI Tools 2026</strong> is a 77-page digital eBook delivered in PDF format. The product covers strategies and information related to using AI tools for online income generation, including but not limited to:</p>
+      <ul>
+        <li>An overview of AI tools and their income-generating applications</li>
+        <li>Strategies for freelancing using AI assistance</li>
+        <li>Methods for creating and monetizing digital content</li>
+        <li>An introduction to affiliate marketing using AI tools</li>
+        <li>A 30-day action plan for beginners</li>
+      </ul>
+      <div class="info-box gold">
+        <strong>Educational Nature</strong>
+        This product is educational and informational in nature. It does not constitute professional financial, legal, or business advice. All strategies and information are provided for educational purposes only.
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- PURCHASE & DELIVERY -->
+    <div class="section" id="purchase">
+      <span class="section-num">03 — PURCHASE</span>
+      <h2><span class="icon">🛒</span> Purchase & Delivery</h2>
+      <p>All purchases are processed securely through JVZoo's payment platform. By completing a purchase, you agree to the following:</p>
+      <ul>
+        <li>All sales are in US Dollars (USD)</li>
+        <li>Payment is processed immediately at the time of purchase</li>
+        <li>You will receive a download link via email immediately after successful payment</li>
+        <li>The product is delivered digitally — no physical product will be shipped</li>
+        <li>You are responsible for providing a valid email address at checkout</li>
+        <li>If you do not receive your download link within 24 hours, contact us immediately</li>
+      </ul>
+      <div class="info-box green">
+        <strong>Instant Delivery</strong>
+        Your PDF will be available for download immediately after payment confirmation. Check your email (including spam/junk folder) for the delivery confirmation from JVZoo.
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- REFUND POLICY -->
+    <div class="section" id="refund">
+      <span class="section-num">04 — REFUNDS</span>
+      <h2><span class="icon">↩️</span> Refund Policy</h2>
+
+      <div class="refund-box">
+        <div class="refund-icon">🛡️</div>
+        <div class="refund-title"><span>30-Day</span> Money-Back Guarantee</div>
+        <p class="refund-desc">We stand behind the quality of our product. If you are not satisfied with your purchase for any reason, contact us within 30 days of purchase for a full refund — no questions asked.</p>
+      </div>
+
+      <p>To request a refund, please contact us through our <a href="contact.html" style="color:var(--blue-light);">Contact Page</a> with your order number and the email address used at checkout. Refunds will be processed within 5–10 business days.</p>
+
+      <p><strong style="color:var(--white)">Please note the following refund conditions:</strong></p>
+      <ul>
+        <li>Refund requests must be submitted within 30 days of the original purchase date</li>
+        <li>Only one refund per customer is permitted</li>
+        <li>Refunds are processed to the original payment method</li>
+        <li>Chargebacks or disputes filed with your bank before contacting us will void your eligibility for a courtesy refund</li>
+      </ul>
+
+      <div class="info-box red">
+        <strong>Chargeback Policy</strong>
+        Filing a chargeback or payment dispute without first contacting us is a violation of these Terms. We take all chargebacks seriously and reserve the right to contest fraudulent disputes with full transaction evidence.
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- LICENSE -->
+    <div class="section" id="license">
+      <span class="section-num">05 — LICENSE</span>
+      <h2><span class="icon">📄</span> License & Permitted Use</h2>
+      <p>Upon purchase, you are granted a <strong style="color:var(--white)">personal, non-exclusive, non-transferable license</strong> to use this product for your own personal and business purposes.</p>
+      <p>This license permits you to:</p>
+      <ul>
+        <li>Download and read the eBook on your personal devices</li>
+        <li>Print a single copy for personal use</li>
+        <li>Apply the strategies and information contained within for your own business activities</li>
+        <li>Reference ideas or concepts from the book in your own original work (with appropriate credit)</li>
+      </ul>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- PROHIBITED -->
+    <div class="section" id="prohibited">
+      <span class="section-num">06 — PROHIBITED USES</span>
+      <h2><span class="icon">🚫</span> Prohibited Uses</h2>
+      <p>You are expressly prohibited from the following activities in relation to this product:</p>
+      <ul>
+        <li>Reselling, redistributing, or sharing the eBook with others</li>
+        <li>Uploading the PDF to any file-sharing, torrent, or public download platform</li>
+        <li>Reproducing or republishing substantial portions of the content without written permission</li>
+        <li>Claiming authorship or representing the work as your own</li>
+        <li>Removing or altering any copyright notices or disclaimers within the product</li>
+        <li>Using the content to create a competing product without written permission</li>
+        <li>Selling access to the product as part of a bundle without prior written authorization</li>
+      </ul>
+      <div class="info-box red">
+        <strong>Copyright Enforcement</strong>
+        Unauthorized distribution or reproduction of this product is a violation of copyright law and these Terms. We actively monitor for unauthorized sharing and reserve the right to pursue legal remedies.
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- DISCLAIMER -->
+    <div class="section" id="disclaimer">
+      <span class="section-num">07 — DISCLAIMER</span>
+      <h2><span class="icon">⚠️</span> Earnings & Results Disclaimer</h2>
+      <p>The information contained in this product is provided for educational purposes only. Any income figures, examples, or results mentioned are illustrative and are not guarantees of what you will achieve.</p>
+      <p>We make no representations or warranties, express or implied, about:</p>
+      <ul>
+        <li>The accuracy or completeness of the information provided</li>
+        <li>Results you will achieve by applying the strategies described</li>
+        <li>The suitability of any AI tool, platform, or strategy for your specific situation</li>
+        <li>The continued availability or terms of any third-party platform mentioned</li>
+      </ul>
+      <p>Individual results will vary significantly based on effort, experience, market conditions, skill level, and many other factors. <strong style="color:var(--white)">There is no guarantee of income or specific results from using this product.</strong></p>
+      <div class="info-box gold">
+        <strong>Third-Party Platforms</strong>
+        We are not affiliated with, endorsed by, or officially connected to JVZoo, Fiverr, Upwork, PayPal, or any other platform mentioned in this product. All trademarks belong to their respective owners. Platform policies, features, and terms may change at any time without notice.
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- LIABILITY -->
+    <div class="section" id="liability">
+      <span class="section-num">08 — LIABILITY</span>
+      <h2><span class="icon">⚖️</span> Limitation of Liability</h2>
+      <p>To the maximum extent permitted by applicable law, Make Money with AI Tools 2026 and its author shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to:</p>
+      <ul>
+        <li>Loss of profits or revenue</li>
+        <li>Loss of data or business opportunities</li>
+        <li>Financial decisions made based on the content of this product</li>
+        <li>Damages resulting from use of or inability to use third-party platforms mentioned</li>
+        <li>Any errors or omissions in the content</li>
+      </ul>
+      <p>Our total liability to you for any claim arising from the use of this product shall not exceed the amount you paid for the product.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- INTELLECTUAL PROPERTY -->
+    <div class="section" id="intellectual">
+      <span class="section-num">09 — INTELLECTUAL PROPERTY</span>
+      <h2><span class="icon">©</span> Intellectual Property</h2>
+      <p>All content within <strong style="color:var(--white)">Make Money with AI Tools 2026</strong> — including but not limited to text, graphics, layout, and structure — is the intellectual property of the author and is protected by applicable copyright laws.</p>
+      <p>Nothing in these Terms grants you any right to use our intellectual property beyond the personal license described in Section 05. All rights not expressly granted are reserved.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- GOVERNING LAW -->
+    <div class="section" id="governing">
+      <span class="section-num">10 — GOVERNING LAW</span>
+      <h2><span class="icon">🌍</span> Governing Law</h2>
+      <p>These Terms of Service shall be governed by and construed in accordance with applicable international digital commerce laws and the laws of the jurisdiction in which the product owner operates.</p>
+      <p>Any disputes arising from these terms or your use of our products shall first be attempted to be resolved through direct communication. If a resolution cannot be reached, disputes may be submitted to binding arbitration.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- CHANGES -->
+    <div class="section" id="changes">
+      <span class="section-num">11 — CHANGES</span>
+      <h2><span class="icon">🔄</span> Changes to These Terms</h2>
+      <p>We reserve the right to modify these Terms of Service at any time. Changes will be effective immediately upon posting to our website. The "Last Updated" date at the top of this page will reflect the most recent revision.</p>
+      <p>Your continued use of our products or website after any changes constitutes your acceptance of the new terms. We encourage you to review these Terms periodically.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- CONTACT -->
+    <div class="section" id="contact">
+      <span class="section-num">12 — CONTACT</span>
+      <h2><span class="icon">📬</span> Contact Us</h2>
+      <p>If you have any questions, concerns, or need clarification regarding these Terms of Service, please contact us. We aim to respond to all inquiries within 48 hours on business days.</p>
+      <div class="info-box green">
+        <strong>Support</strong>
+        For refund requests, please include your JVZoo order number and the email address used at checkout. For general questions, use the contact form and we will respond promptly.
+      </div>
+      <a href="contact.html" class="contact-link">📧 Go to Contact Page</a>
+    </div>
+
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">Make Money with <span>AI Tools</span> 2026</div>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-service.html" class="current">Terms of Service</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <p>© 2026 Make Money with AI Tools. All Rights Reserved. | This product is for educational purposes only. Results are not guaranteed and will vary.</p>
+</footer>
+
+<script>
+  const sections = document.querySelectorAll('.section');
+  const tocLinks = document.querySelectorAll('.toc a');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        tocLinks.forEach(link => { link.style.color = ''; link.style.background = ''; });
+        const active = document.querySelector(`.toc a[href="#${entry.target.id}"]`);
+        if (active) {
+          active.style.color = 'var(--blue-light)';
+          active.style.background = 'rgba(55,138,221,0.08)';
+        }
+      }
+    });
+  }, { threshold: 0.3, rootMargin: '-80px 0px 0px 0px' });
+  sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>
