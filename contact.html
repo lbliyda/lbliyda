@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — Make Money with AI Tools 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&family=Courier+Prime&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy:       #070d1f;
+    --navy-mid:   #0a1f4d;
+    --navy-light: #1a3a6b;
+    --blue:       #378ADD;
+    --blue-light: #85B7EB;
+    --gold:       #f4a261;
+    --gold-dark:  #d4813e;
+    --white:      #ffffff;
+    --gray:       #8a9bb5;
+    --green:      #1D9E75;
+    --text:       #cfd8e8;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Lato', sans-serif;
+    background: var(--navy);
+    color: var(--text);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* NAV */
+  nav {
+    background: rgba(7,13,31,0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(244,162,97,0.2);
+    padding: 16px 40px;
+    display: flex; align-items: center; justify-content: space-between;
+    position: sticky; top: 0; z-index: 100;
+  }
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px; font-weight: 700; color: var(--white);
+    text-decoration: none;
+  }
+  .nav-logo span { color: var(--gold); }
+  .nav-links { display: flex; gap: 24px; }
+  .nav-links a {
+    font-size: 13px; color: var(--gray);
+    text-decoration: none; transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-links a.active { color: var(--gold); font-weight: 700; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(160deg, #0f2550 0%, #070d1f 70%);
+    padding: 80px 40px 60px;
+    text-align: center;
+    position: relative; overflow: hidden;
+    border-bottom: 1px solid rgba(55,138,221,0.15);
+  }
+  .hero::before {
+    content: '';
+    position: absolute; top: -150px; left: 50%; transform: translateX(-50%);
+    width: 600px; height: 600px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(55,138,221,0.1) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-badge {
+    display: inline-block;
+    background: rgba(29,158,117,0.1);
+    border: 1px solid rgba(29,158,117,0.3);
+    color: var(--green); font-size: 11px; font-weight: 700;
+    letter-spacing: 3px; padding: 7px 18px; border-radius: 30px;
+    margin-bottom: 24px; text-transform: uppercase;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 5vw, 56px); font-weight: 700;
+    color: var(--white); margin-bottom: 16px; line-height: 1.15;
+  }
+  .hero h1 span { color: var(--gold); }
+  .hero-sub {
+    font-size: 17px; color: var(--blue-light);
+    max-width: 520px; margin: 0 auto; line-height: 1.7;
+  }
+
+  /* MAIN */
+  .main {
+    max-width: 1000px; margin: 0 auto;
+    padding: 70px 24px 90px;
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 48px;
+    align-items: start;
+  }
+
+  /* FORM SIDE */
+  .form-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px; font-weight: 700; color: var(--white);
+    margin-bottom: 8px;
+  }
+  .form-section h2 span { color: var(--gold); }
+  .form-section .subtitle {
+    font-size: 15px; color: var(--gray); line-height: 1.7;
+    margin-bottom: 36px;
+  }
+
+  /* FORM */
+  .contact-form { display: grid; gap: 20px; }
+
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+  .field { display: flex; flex-direction: column; gap: 8px; }
+  .field label {
+    font-size: 12px; font-weight: 700; letter-spacing: 1px;
+    color: var(--blue-light); text-transform: uppercase;
+  }
+  .field input, .field select, .field textarea {
+    background: rgba(10,31,77,0.6);
+    border: 1px solid rgba(55,138,221,0.2);
+    border-radius: 10px; padding: 14px 18px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px; color: var(--white);
+    outline: none; transition: border-color 0.2s, background 0.2s;
+    width: 100%;
+  }
+  .field input::placeholder,
+  .field textarea::placeholder { color: rgba(138,155,181,0.5); }
+  .field input:focus,
+  .field select:focus,
+  .field textarea:focus {
+    border-color: rgba(55,138,221,0.5);
+    background: rgba(10,31,77,0.8);
+  }
+  .field select option { background: #0a1f4d; color: var(--white); }
+  .field textarea { resize: vertical; min-height: 140px; line-height: 1.6; }
+
+  .submit-btn {
+    background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+    color: var(--navy); font-family: 'Lato', sans-serif;
+    font-size: 16px; font-weight: 700; letter-spacing: 0.5px;
+    padding: 16px 40px; border-radius: 50px;
+    border: none; cursor: pointer; width: 100%;
+    box-shadow: 0 8px 28px rgba(244,162,97,0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 36px rgba(244,162,97,0.45);
+  }
+  .submit-btn:active { transform: translateY(0); }
+
+  /* SUCCESS MESSAGE */
+  .success-msg {
+    display: none;
+    background: rgba(29,158,117,0.1);
+    border: 1px solid rgba(29,158,117,0.3);
+    border-radius: 12px; padding: 24px 28px;
+    text-align: center; margin-top: 16px;
+  }
+  .success-msg .icon { font-size: 36px; margin-bottom: 12px; }
+  .success-msg h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px; color: var(--white); margin-bottom: 8px;
+  }
+  .success-msg p { font-size: 14px; color: var(--green); line-height: 1.6; }
+
+  /* RESPONSE TIME NOTE */
+  .response-note {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 13px; color: var(--gray); margin-top: 4px;
+  }
+  .response-note::before { content: '⏱'; font-size: 14px; }
+
+  /* RIGHT SIDE */
+  .info-side { display: flex; flex-direction: column; gap: 20px; }
+
+  /* INFO CARDS */
+  .info-card {
+    background: linear-gradient(145deg, #0d254f, #0a1830);
+    border: 1px solid rgba(55,138,221,0.15);
+    border-radius: 14px; padding: 24px 22px;
+    transition: border-color 0.2s;
+  }
+  .info-card:hover { border-color: rgba(55,138,221,0.3); }
+  .info-card-icon { font-size: 28px; margin-bottom: 12px; }
+  .info-card h3 {
+    font-size: 16px; font-weight: 700; color: var(--white);
+    margin-bottom: 8px;
+  }
+  .info-card p { font-size: 14px; color: var(--gray); line-height: 1.7; }
+  .info-card .tag {
+    display: inline-block; margin-top: 12px;
+    background: rgba(55,138,221,0.1);
+    border: 1px solid rgba(55,138,221,0.25);
+    color: var(--blue-light); font-size: 12px; font-weight: 700;
+    padding: 4px 12px; border-radius: 20px;
+  }
+  .info-card .tag.green {
+    background: rgba(29,158,117,0.1);
+    border-color: rgba(29,158,117,0.25);
+    color: var(--green);
+  }
+  .info-card .tag.gold {
+    background: rgba(244,162,97,0.1);
+    border-color: rgba(244,162,97,0.25);
+    color: var(--gold);
+  }
+
+  /* FAQ MINI */
+  .faq-mini {
+    background: rgba(10,31,77,0.4);
+    border: 1px solid rgba(55,138,221,0.1);
+    border-radius: 14px; padding: 24px 22px;
+  }
+  .faq-mini h3 {
+    font-size: 14px; font-weight: 700; letter-spacing: 1px;
+    color: var(--gold); text-transform: uppercase;
+    margin-bottom: 16px; padding-bottom: 12px;
+    border-bottom: 1px solid rgba(55,138,221,0.1);
+  }
+  .faq-item { margin-bottom: 14px; }
+  .faq-item:last-child { margin-bottom: 0; }
+  .faq-q { font-size: 13px; font-weight: 700; color: var(--white); margin-bottom: 4px; }
+  .faq-a { font-size: 13px; color: var(--gray); line-height: 1.6; }
+
+  /* DIVIDER */
+  .section-divider {
+    width: 100%; height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(55,138,221,0.2), transparent);
+    margin: 70px 0;
+  }
+
+  /* FOOTER */
+  footer {
+    background: #040810;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    padding: 36px 40px;
+    display: flex; flex-wrap: wrap;
+    align-items: center; justify-content: space-between;
+    gap: 20px;
+  }
+  .footer-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px; color: var(--white);
+  }
+  .footer-brand span { color: var(--gold); }
+  .footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
+  .footer-links a {
+    font-size: 13px; color: var(--gray);
+    text-decoration: none; transition: color 0.2s;
+  }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-links a.current { color: var(--gold); font-weight: 700; }
+  footer p {
+    width: 100%; font-size: 12px;
+    color: rgba(138,155,181,0.5); text-align: center;
+    margin-top: 12px;
+    border-top: 1px solid rgba(255,255,255,0.04);
+    padding-top: 16px;
+  }
+
+  /* ANIMATIONS */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  @media (max-width: 760px) {
+    .main { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    nav { padding: 14px 20px; }
+    .nav-links { gap: 14px; }
+    .hero { padding: 56px 20px 40px; }
+    footer { padding: 24px 20px; flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Make Money with <span>AI Tools</span></a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="privacy-policy.html">Privacy</a>
+    <a href="terms-of-service.html">Terms</a>
+    <a href="contact.html" class="active">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">💬 We're Here to Help</div>
+  <h1>Get in <span>Touch</span> with Us</h1>
+  <p class="hero-sub">Have a question about your order, a refund request, or anything else? We respond to every message within 48 hours.</p>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+  <!-- FORM -->
+  <div class="form-section reveal">
+    <h2>Send Us a <span>Message</span></h2>
+    <p class="subtitle">Fill in the form below and we'll get back to you as soon as possible. For refund requests, please include your JVZoo order number.</p>
+
+    <form class="contact-form" onsubmit="handleSubmit(event)">
+
+      <div class="form-row">
+        <div class="field">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="fname" placeholder="Your first name" required>
+        </div>
+        <div class="field">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lname" placeholder="Your last name" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="The email used for your purchase" required>
+      </div>
+
+      <div class="field">
+        <label for="order">Order Number (if applicable)</label>
+        <input type="text" id="order" name="order" placeholder="Your JVZoo order number (e.g. JVZ-123456)">
+      </div>
+
+      <div class="field">
+        <label for="subject">Subject</label>
+        <select id="subject" name="subject" required>
+          <option value="" disabled selected>Select a topic...</option>
+          <option value="refund">Refund Request</option>
+          <option value="download">Download Issue</option>
+          <option value="product">Product Question</option>
+          <option value="affiliate">Affiliate / JV Inquiry</option>
+          <option value="technical">Technical Support</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" placeholder="Please describe your question or issue in detail. The more information you provide, the faster we can help you." required></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">📨 Send Message</button>
+
+      <p class="response-note">We aim to respond within 48 hours on business days (Monday–Friday).</p>
+
+    </form>
+
+    <!-- SUCCESS -->
+    <div class="success-msg" id="successMsg">
+      <div class="icon">✅</div>
+      <h3>Message Sent!</h3>
+      <p>Thank you for reaching out. We have received your message and will respond to your email within 48 hours. Please check your spam folder if you do not hear from us.</p>
+    </div>
+
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="info-side reveal">
+
+    <!-- Response Time -->
+    <div class="info-card">
+      <div class="info-card-icon">⏱️</div>
+      <h3>Response Time</h3>
+      <p>We respond to all messages within 48 hours on business days. Refund requests are typically processed within 5–10 business days.</p>
+      <span class="tag green">48-Hour Response</span>
+    </div>
+
+    <!-- Refund -->
+    <div class="info-card">
+      <div class="info-card-icon">🛡️</div>
+      <h3>Refund Requests</h3>
+      <p>Not satisfied with your purchase? We offer a 30-day money-back guarantee. Include your JVZoo order number and purchase email in your message.</p>
+      <span class="tag gold">30-Day Guarantee</span>
+    </div>
+
+    <!-- Download Issue -->
+    <div class="info-card">
+      <div class="info-card-icon">📥</div>
+      <h3>Download Issues</h3>
+      <p>Did not receive your download link? First check your spam folder. If the email is not there, contact us with your order number and we will resend it promptly.</p>
+      <span class="tag">We'll Resend It</span>
+    </div>
+
+    <!-- Affiliate -->
+    <div class="info-card">
+      <div class="info-card-icon">🤝</div>
+      <h3>Affiliate & JV Inquiries</h3>
+      <p>Interested in promoting our product or setting up a joint venture? Visit our JV page for details, or contact us for custom commission arrangements.</p>
+      <a href="jv-page.html" style="display:inline-block; margin-top:12px; font-size:13px; color:var(--blue-light); text-decoration:none;">→ Visit JV Page</a>
+    </div>
+
+    <!-- Mini FAQ -->
+    <div class="faq-mini">
+      <h3>Quick Answers</h3>
+
+      <div class="faq-item">
+        <div class="faq-q">How do I download my eBook?</div>
+        <div class="faq-a">Check your email inbox (and spam folder) for a message from JVZoo with your download link. It is sent automatically after payment.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Can I get a refund?</div>
+        <div class="faq-a">Yes. We offer a 30-day money-back guarantee. Contact us with your order number and we will process your refund promptly.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">What format is the eBook?</div>
+        <div class="faq-a">The eBook is delivered as a PDF file. It can be read on any device — computer, phone, or tablet.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Is there customer support?</div>
+        <div class="faq-a">Yes. Use this contact form and we will respond within 48 hours on business days.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">Make Money with <span>AI Tools</span> 2026</div>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-service.html">Terms of Service</a>
+    <a href="contact.html" class="current">Contact</a>
+  </div>
+  <p>© 2026 Make Money with AI Tools. All Rights Reserved. | Results are not guaranteed and will vary based on individual effort and market conditions.</p>
+</footer>
+
+<script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    const form = e.target;
+    const btn = form.querySelector('.submit-btn');
+    btn.textContent = 'Sending...';
+    btn.style.opacity = '0.7';
+    btn.disabled = true;
+
+    // Simulate sending (replace with your actual form handler e.g. Formspree)
+    setTimeout(() => {
+      form.style.display = 'none';
+      document.getElementById('successMsg').style.display = 'block';
+    }, 1200);
+  }
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
